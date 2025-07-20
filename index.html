@@ -1,20 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-    </script>
-    <title></title>
-    <!--preload-links-->
-    <!--app-context-->
-  </head>
-  <body>
-    <div id="app"><!--app-html--></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>蜂点到家</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background: white;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>蜂点到家</h1>
+    <p>乐清本地生活服务平台，便捷预约上门家政服务</p>
+  </header>
+
+  <section>
+    <h2>应用介绍</h2>
+    <p>蜂点到家是一款专为乐清市用户打造的本地生活服务平台，致力于提供高效、便捷、可靠的上门家政服务预约体验。</p>
+  </section>
+
+  <section>
+    <h2>核心功能</h2>
+    <ul>
+      <li>用户一键预约师傅上门服务</li>
+      <li>师傅端接单提醒及时推送</li>
+      <li>短信通知提醒服务时间安排</li>
+      <li>订单管理、取消通知自动化</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>联系我们</h2>
+    <p>如有疑问或建议，欢迎通过以下方式联系我们：</p>
+    <ul>
+      <li>邮箱：support@example.com</li>
+      <li>微信客服：fengdiankefu</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>用户协议 & 隐私政策</h2>
+    <p><a href="user-agreement.html" target="_blank">《用户协议》</a> | <a href="privacy-policy.html" target="_blank">《隐私政策》</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 蜂点到家 ｜ 网站备案信息：暂未备案 ｜ All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
