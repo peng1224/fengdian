@@ -1,0 +1,7 @@
+{
+  "name": "getNavData",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

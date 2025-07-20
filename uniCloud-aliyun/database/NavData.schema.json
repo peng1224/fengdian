@@ -1,0 +1,31 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": ["classname","icon"],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"classname":{
+			"title": "分类名称",
+			"description": "请填写分类名称",
+			"bsonType": "string"
+		},
+		"icon":{
+			"title": "分类图标",
+			"description": "请填写分类图标",
+			"bsonType": "string"
+		},
+		"serial_number":{
+			"title": "分类排序",
+			"description": "请填写分类排序",
+			"bsonType": "int"
+		}
+	}
+}

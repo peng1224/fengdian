@@ -1,0 +1,7 @@
+{
+  "name": "recordUserPhoneCallAction",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

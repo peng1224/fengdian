@@ -1,0 +1,218 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+:root, body, body, html, #app, .uni-app {
+  --themeColor: #1ABDF2;
+  --primary-accent: #1ABDF2;
+  --globalcolor: #1a1b1c;
+  --focusColor: #4c4d4e;
+  --descColor: #7e8081;
+  --greyColor: #8e8e8e;
+  --subColor: #b1b2b3;
+  --lightColor: #e4e4e4;
+  --globalBgColor1: #e3e4e5;
+  --globalBgColor2: #f6f7f8;
+  --globalBgColor3: #ffffff;
+  --bg-light: #f7f8fa;
+  --blue-accent: #3978F7;
+  --text-main: #333333;
+  --text-sub: #666666;
+  --line-gray: #E5E5E5;
+  --bg-white: #FFFFFF;
+}
+
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.page-container {
+  min-height: 100vh;
+}
+.card {
+  background-color: #fff;
+  margin: 1.09375rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.card-header {
+  padding: 0.75rem 0.9375rem;
+  border-bottom: 0.03125rem solid #eee;
+  display: flex;
+  align-items: center;
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-body {
+  padding: 0.9375rem;
+}
+.balance-card .balance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.46875rem;
+}
+.balance-card .balance-row:last-child {
+  margin-bottom: 0;
+}
+.balance-card .balance-label {
+  font-size: 0.875rem;
+  color: #666;
+  flex-shrink: 0;
+  /* 防止文字被压缩 */
+}
+.balance-card .balance-amount {
+  display: flex;
+  align-items: baseline;
+  margin-left: 0.625rem;
+  /* 与label的间距 */
+  /* 修正：将 .pending-amount 直接作用于 .amount */
+}
+.balance-card .balance-amount .currency-symbol {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 0.25rem;
+}
+.balance-card .balance-amount .amount {
+  font-size: 1.75rem;
+  /* 比总额稍小 */
+  font-weight: bold;
+  color: #007aff;
+  /* 主题蓝 */
+}
+.balance-card .balance-amount.status-pending {
+  /* 使用更具体的选择器，确保只应用于审核中金额 */
+  color: #ff9900;
+  /* 审核中金额使用橙色 */
+}
+.balance-card .card-footer {
+  padding: 0.625rem 0.9375rem 0.9375rem;
+  border-top: 0.03125rem solid #eee;
+  text-align: center;
+}
+.balance-card .primary-btn {
+  background-color: #007aff;
+  /* 主题蓝 */
+  color: #fff;
+  border-radius: 1.5625rem;
+  font-size: 1rem;
+  padding: 0.625rem 0;
+  width: 80%;
+}
+.balance-card .primary-btn:active {
+  opacity: 0.8;
+}
+.balance-card .primary-btn[disabled] {
+  background-color: #a0cfff;
+  /* 禁用状态的蓝色 */
+  color: #fff;
+}
+.history-card .history-list .history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0;
+  border-bottom: 0.03125rem solid #f0f0f0;
+}
+.history-card .history-list .history-item:last-child {
+  border-bottom: none;
+}
+.history-card .history-list .history-item .item-info {
+  display: flex;
+  flex-direction: column;
+}
+.history-card .history-list .history-item .item-info .item-amount {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.history-card .history-list .history-item .item-info .item-date {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.125rem;
+}
+.history-card .history-list .history-item .item-status {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3125rem;
+  font-weight: bold;
+}
+.history-card .history-list .history-item .item-status.status-pending {
+  /* 提现记录中的“待审核” */
+  color: #ff9900;
+  /* 橙色 */
+  background-color: #fff3e0;
+}
+.history-card .history-list .history-item .item-status.status-completed {
+  color: #007aff;
+  /* 蓝色 */
+  background-color: #e6f7ff;
+}
+.history-card .history-list .history-item .item-status.status-rejected, .history-card .history-list .history-item .item-status.status-failed {
+  /* 失败 */
+  color: #ff4d4f;
+  /* 红色 */
+  background-color: #ffe6e6;
+}
+.loading-state, .empty-state {
+  text-align: center;
+  padding: 1.875rem;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+/* 自定义消息提示框样式 */
+.custom-message-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.custom-message-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+.custom-message-popup.success {
+  background-color: rgba(40, 167, 69, 0.8);
+  /* Green */
+}
+.custom-message-popup.error {
+  background-color: rgba(220, 53, 69, 0.8);
+  /* Red */
+}
+.custom-message-popup.info {
+  background-color: rgba(23, 162, 184, 0.8);
+  /* Blue-ish */
+}

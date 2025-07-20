@@ -1,0 +1,7 @@
+{
+  "name": "getAppointmentsByWorker",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

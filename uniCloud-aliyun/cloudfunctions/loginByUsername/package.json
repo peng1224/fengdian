@@ -1,0 +1,9 @@
+{
+  "name": "loginByUsername",
+  "dependencies": {
+    "uni-id-co": "^1.1.14"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

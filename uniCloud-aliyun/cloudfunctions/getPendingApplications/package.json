@@ -1,0 +1,7 @@
+{
+  "name": "getPendingApplications",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

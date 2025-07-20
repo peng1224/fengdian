@@ -1,0 +1,99 @@
+{
+  "dcloudAppid": "__UNI__3B0C11F",
+  "passwordSecret": [
+    {
+      "type": "hmac-sha256",
+      "version": 1
+    }
+  ],
+  "passwordStrength": "medium",
+  "tokenSecret": "fengdian2025",
+  "requestAuthSecret": "fengdian2025",
+  "tokenExpiresIn": 7200,
+  "tokenExpiresThreshold": 3600,
+  "maxTokenLength": 10,
+  "passwordErrorLimit": 6,
+  "passwordErrorRetryTime": 3600,
+  "autoSetInviteCode": false,
+  "forceInviteCode": false,
+  "idCardCertifyLimit": 1,
+  "realNameCertifyLimit": 5,
+  "sensitiveInfoEncryptSecret": "",
+  "frvNeedAlivePhoto": false,
+  "userRegisterDefaultRole": [],
+  "app": {
+    "tokenExpiresThreshold": 864000,
+    "oauth": {
+      "weixin": {
+        "appid": "wxe720228a95e1525e",
+        "appsecret": "3f9c918c766c173c531fff8d1b45cec5"
+      },
+      "apple": {
+        "bundleId": ""
+      }
+    }
+  },
+  "web": {
+    "tokenExpiresIn": 7200,
+    "tokenExpiresThreshold": 3600,
+    "oauth": {
+      "weixin-h5": {
+        "appid": "",
+        "appsecret": ""
+      },
+      "weixin-web": {
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-weixin": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      "weixin": {
+        "appid": "wxe720228a95e1525e",
+        "appsecret": "3f9c918c766c173c531fff8d1b45cec5"
+      }
+    }
+  },
+  "mp-qq": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      "qq": {
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-alipay": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      "alipay": {
+        "appid": "",
+        "privateKey": "",
+        "keyType": "PKCS8"
+      }
+    }
+  },
+  "service": {
+    "sms": {
+      "name": "",
+      "codeExpiresIn": 180,
+      "smsKey": "",
+      "smsSecret": "",
+      "scene": {
+        "bind-mobile-by-sms": {
+          "templateId": "",
+          "codeExpiresIn": 240
+        }
+      }
+    },
+    "univerify": {
+      "appid": "",
+      "apiKey": ""
+    }
+  }
+}

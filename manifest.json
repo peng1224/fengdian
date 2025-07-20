@@ -1,0 +1,203 @@
+{
+    "name" : "蜂点到家",
+    "appid" : "__UNI__3B0C11F",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Maps" : {},
+            "Camera" : {},
+            "Bluetooth" : {},
+            "FaceID" : {},
+            "Geolocation" : {
+                "coordinateTransform" : "none"
+            },
+            "SecureNetwork" : {},
+            "Payment" : {},
+            "OAuth" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "maps" : {
+                    "tencent" : {
+                        "key" : "3QUBZ-FFCCB-6GYUO-NQI2R-WDUB5-BJFIY"
+                    }
+                },
+                "push" : {},
+                "geolocation" : {
+                    "tencent" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "apikey_ios" : "3QUBZ-FFCCB-6GYUO-NQI2R-WDUB5-BJFIY",
+                        "apikey_android" : "3QUBZ-FFCCB-6GYUO-NQI2R-WDUB5-BJFIY"
+                    },
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wxe720228a95e1525e",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wxe720228a95e1525e",
+                        "UniversalLinks" : ""
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : true
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxe720228a95e1525e",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "用于用户获取位置服务"
+            }
+        },
+        // 【请确保添加了下面这个字段】
+        "requiredPrivateInfos" : [ "getLocation", "chooseLocation" ],
+        "secureNetwork" : {
+            "enable" : true
+        },
+        "uniCloud" : {
+            "provider" : {
+                "unicloud" : {
+                    "serviceId" : "mp-1240ebd5-749c-4abc-b593-fd807f0347fb" // <-- 您的生产服务空间ID
+                }
+            }
+        }
+    },
+    // ========== 重点：修改 mp-toutiao 配置 ==========
+    "mp-toutiao" : {
+        "appid" : "tt457133ccda7f8c7f01", // 您的抖音小程序AppID
+        "usingComponents" : true,
+        "setting" : {
+            "urlCheck" : false, // 抖音小程序通常不强制URL校验，但建议保持
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "为了向您推荐附近的工人或服务，我们需要获取您的位置信息。" // 明确的位置权限描述
+            }
+        },
+        // UniCloud 配置，确保抖音小程序也连接到同一个服务空间
+        "uniCloud" : {
+            "provider" : {
+                "unicloud" : {
+                    "serviceId" : "mp-1240ebd5-749c-4abc-b593-fd807f0347fb" // 您的UniCloud服务空间ID
+                }
+            }
+        },
+        // 开启云端一体安全网络，与微信小程序保持一致
+        "secureNetwork" : {
+            "enable" : true
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3",
+    "app-harmony" : {
+        "distribute" : {
+            "modules" : {}
+        }
+    }
+}

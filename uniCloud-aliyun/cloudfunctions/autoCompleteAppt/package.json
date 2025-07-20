@@ -1,0 +1,7 @@
+{
+  "name": "autoCompleteAppt",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

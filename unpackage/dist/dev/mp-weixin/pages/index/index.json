@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "enableShareAppMessage": true,
+  "enableShareTimeline": true,
+  "usingComponents": {
+    "news-item": "../news-item"
+  }
+}

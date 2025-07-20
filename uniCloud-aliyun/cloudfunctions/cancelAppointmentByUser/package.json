@@ -1,0 +1,7 @@
+{
+  "name": "cancelAppointmentByUser",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

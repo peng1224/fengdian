@@ -1,0 +1,294 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+:root, page, body, html, #app, .uni-app {
+  --themeColor: #1ABDF2;
+  --primary-accent: #1ABDF2;
+  --globalcolor: #1a1b1c;
+  --focusColor: #4c4d4e;
+  --descColor: #7e8081;
+  --greyColor: #8e8e8e;
+  --subColor: #b1b2b3;
+  --lightColor: #e4e4e4;
+  --globalBgColor1: #e3e4e5;
+  --globalBgColor2: #f6f7f8;
+  --globalBgColor3: #ffffff;
+  --bg-light: #f7f8fa;
+  --blue-accent: #3978F7;
+  --text-main: #333333;
+  --text-sub: #666666;
+  --line-gray: #E5E5E5;
+  --bg-white: #FFFFFF;
+}
+
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 全局变量：点缀色、文字色、背景色、分割线 */
+:root {
+  --primary-accent: #007AFF;
+  /* 黄色点缀 */
+  --text-main: #333333;
+  /* 主要文字 (深灰) */
+  --text-sub: #666666;
+  /* 次要文字 (中灰) */
+  --line-gray: #E5E5E5;
+  /* 分割线 (浅灰) */
+  --bg-white: #FFFFFF;
+  /* 白色 */
+  --bg-light: #F7F8FA;
+  /* 浅灰背景 */
+  --blue-accent: #3978F7;
+  /* 交互高亮蓝 */
+  --globalcolor: #333333;
+  /* 全局颜色 */
+}
+.header-emptybox {
+  width: 100%;
+  height: 230rpx;
+  position: relative;
+}
+.profile-title {
+  position: absolute;
+  font-size: 55rpx;
+  font-weight: 580;
+  color: #1c1c1e;
+  font-family: "Helvetica Neue", "PingFang SC", "Helvetica", "Arial", sans-serif;
+  top: 130rpx;
+  left: 35rpx;
+}
+
+/* 地图容器 */
+.map-container {
+  position: relative;
+  margin-top: 20rpx;
+  padding: 0 30rpx 20rpx;
+  background: var(--bg-white);
+}
+.map-container map {
+  width: 100%;
+  height: 420rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.map-container .location-button {
+  position: absolute;
+  right: 50rpx;
+  bottom: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background: var(--bg-white);
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  transition: transform 0.1s;
+}
+.map-container .location-button:active {
+  transform: scale(0.95);
+}
+.map-container .location-button image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 导航菜单 */
+.scroollNav {
+  padding: 20rpx 30rpx;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20rpx;
+}
+.scroollNav .item {
+  text-align: center;
+  transition: transform 0.1s;
+}
+.scroollNav .item:active {
+  transform: scale(0.95);
+}
+.scroollNav .item .pic {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+}
+.scroollNav .item .pic image {
+  width: 100%;
+  height: 100%;
+}
+.scroollNav .item .text {
+  font-size: 26rpx;
+  color: #333333;
+  padding-top: 8rpx;
+}
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  color: var(--text-color);
+  font-size: 28rpx;
+}
+
+/* 新闻资讯 */
+.news {
+  padding: 30rpx 30rpx;
+}
+.news .content {
+  transition: transform 0.1s;
+}
+.news .content:active {
+  transform: scale(0.98);
+}
+.news .content .box {
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+  padding: 8rpx 12rpx;
+}
+
+/* 关于我们 */
+.about {
+  padding: 50rpx 30rpx 80rpx;
+}
+.about .content .row {
+  line-height: 1.6em;
+  text-indent: 2em;
+  font-size: 32rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx dashed var(--primary-accent);
+  color: var(--globalcolor);
+}
+.about .content .row:first-child {
+  padding-top: 0;
+}
+.about .content .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.pubTitle {
+  position: relative;
+  margin: 0 0 32rpx 0;
+  padding: 0 30rpx 0 30rpx;
+  text-align: left;
+  background: none;
+}
+.pubTitle .cn {
+  display: inline-block;
+  font-size: 56rpx;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 2rpx;
+  position: relative;
+  padding-left: 22rpx;
+  line-height: 1.2;
+  background: none;
+}
+.pubTitle .cn::before {
+  content: "";
+  display: inline-block;
+  width: 10rpx;
+  height: 44rpx;
+  background: var(--primary-accent, #3978F7);
+  border-radius: 5rpx;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pubTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2rpx;
+  background: linear-gradient(90deg, #e3eaf3 0%, #f7f8fa 100%);
+  margin-top: 12rpx;
+  border-radius: 1rpx;
+}
+.nsitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+  margin-bottom: 4rpx;
+  min-height: 150rpx;
+  overflow: hidden;
+}
+.nsitem .pic {
+  width: 220rpx;
+  height: 150rpx;
+  flex-shrink: 0;
+}
+.nsitem .pic .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx 0 0 16rpx;
+  object-fit: cover;
+  display: block;
+}
+.nsitem .text {
+  flex: 1 1 0%;
+  min-width: 0;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18rpx 24rpx;
+  box-sizing: border-box;
+}
+.nsitem .text .title {
+  line-height: 1.4em;
+  color: var(--primary-accent);
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 16rpx;
+  white-space: normal;
+}
+.nsitem .text .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32rpx;
+  flex-wrap: nowrap;
+  font-size: 28rpx;
+  color: var(--text-sub);
+}
+.nsitem .text .info .block {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.nsitem .text .info .icon-class {
+  color: var(--text-sub);
+  margin-right: 6rpx;
+}

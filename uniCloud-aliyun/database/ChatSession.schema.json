@@ -1,0 +1,60 @@
+{
+  "bsonType": "object",
+  "required": ["users"],
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "users": {
+      "bsonType": "array",
+      "title": "会话用户列表",
+      "description": "参与会话的用户手机号",
+      "items": {
+        "bsonType": "string"
+      }
+    },
+    "lastMessage": {
+      "bsonType": "string",
+      "title": "最后一条消息",
+      "description": "会话的最后一条消息内容"
+    },
+    "lastTime": {
+      "bsonType": "timestamp",
+      "title": "最后消息时间",
+      "description": "最后一条消息的时间戳"
+    },
+    "unreadCount": {
+      "bsonType": "object",
+      "title": "未读消息计数",
+      "description": "各用户的未读消息数",
+      "additionalProperties": {
+        "bsonType": "int"
+      }
+    },
+    "lastMessageData": {
+      "bsonType": "object",
+      "title": "最后消息数据",
+      "description": "各用户看到的最后消息数据",
+      "additionalProperties": {
+        "bsonType": "object",
+        "properties": {
+          "content": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "timestamp"
+          },
+          "sender": {
+            "bsonType": "string"
+          }
+        }
+      }
+    }
+  },
+  "permission": {
+    "read": "doc.users.indexOf(auth.uid) > -1",
+    "create": "auth.uid != null",
+    "update": "doc.users.indexOf(auth.uid) > -1",
+    "delete": "doc.users.indexOf(auth.uid) > -1"
+  }
+}

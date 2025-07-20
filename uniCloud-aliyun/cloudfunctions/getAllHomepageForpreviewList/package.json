@@ -1,0 +1,7 @@
+{
+  "name": "getAllHomepageForpreviewList",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

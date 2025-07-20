@@ -1,0 +1,40 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+  "bsonType": "object",
+  "required": [],
+  "permission": {
+    "read": "auth.uid != null",
+    "create": "auth.uid != null",
+    "update": "auth.uid == doc._id",
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "phoneNumber": { "bsonType": "string" },
+    "account": { "bsonType": "string" },
+    "passwd": { "bsonType": "string" },
+    "name": { "bsonType": "string" },
+    "avatar": { "bsonType": "string" },
+    "register_date": { "bsonType": "date" },
+    "last_login_date": { "bsonType": "date" },
+    "status": { "bsonType": "string" },
+    "userType": { "bsonType": "string" },
+    "isTechnicianApproved": { "bsonType": "bool" },
+    "applyTechnicianTime": { "bsonType": ["null", "date"] },
+    "technicianApplicationStatus": { "bsonType": "string" },
+    "technicianInfo": {
+      "bsonType": "object",
+      "properties": {
+        "certificates": { "bsonType": "array", "items": { "bsonType": "string" } },
+        "idCard": { "bsonType": "string" },
+        "realName": { "bsonType": "string" },
+        "skills": { "bsonType": "string" }
+      }
+    },
+    "isAdmin": { "bsonType": "bool" },
+    "reviewTime": { "bsonType": "date" },
+    "reviewReason": { "bsonType": "string" }
+  }
+}

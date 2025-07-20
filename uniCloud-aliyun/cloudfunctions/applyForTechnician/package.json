@@ -1,0 +1,7 @@
+{
+  "name": "applyForTechnician",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

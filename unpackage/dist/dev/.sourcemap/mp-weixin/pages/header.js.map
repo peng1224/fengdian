@@ -1,0 +1,1 @@
+{"version":3,"file":"header.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniComponent:/RjovdW5pLWFwcOS7o-eggeaWh-S7ti_onILngrnpgJp1bmktYXBwK3VuaUNsb3VkL3BhZ2VzL2hlYWRlci52dWU"],"sourcesContent":["import Component from 'F:/uni-app代码文件/蜂点通uni-app+uniCloud/pages/header.vue'\nwx.createComponent(Component)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;AACA,GAAG,gBAAgB,SAAS;"}

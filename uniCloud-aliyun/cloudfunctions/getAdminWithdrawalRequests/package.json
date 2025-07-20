@@ -1,0 +1,7 @@
+{
+  "name": "getAdminWithdrawalRequests",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

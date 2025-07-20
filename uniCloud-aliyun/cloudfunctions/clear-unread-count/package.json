@@ -1,0 +1,7 @@
+{
+  "name": "clear-unread-count",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

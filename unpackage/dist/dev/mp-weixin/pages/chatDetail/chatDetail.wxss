@@ -1,0 +1,230 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+:root, page, body, html, #app, .uni-app {
+  --themeColor: #1ABDF2;
+  --primary-accent: #1ABDF2;
+  --globalcolor: #1a1b1c;
+  --focusColor: #4c4d4e;
+  --descColor: #7e8081;
+  --greyColor: #8e8e8e;
+  --subColor: #b1b2b3;
+  --lightColor: #e4e4e4;
+  --globalBgColor1: #e3e4e5;
+  --globalBgColor2: #f6f7f8;
+  --globalBgColor3: #ffffff;
+  --bg-light: #f7f8fa;
+  --blue-accent: #3978F7;
+  --text-main: #333333;
+  --text-sub: #666666;
+  --line-gray: #E5E5E5;
+  --bg-white: #FFFFFF;
+}
+
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  height: 100%;
+}
+.chat-container {
+  position: relative;
+  height: 100vh;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.message-scroll-view {
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+}
+.loading-more {
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+  padding: 20rpx 0;
+}
+.message-item {
+  display: flex;
+  margin: 20rpx 30rpx 40rpx;
+  align-items: flex-start;
+}
+.message-item.mine {
+  flex-direction: row-reverse;
+}
+.message-item.mine .msg-content {
+  align-items: flex-end;
+}
+.message-item.mine .bubble {
+  background: #fff;
+}
+.message-item.system-message {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx 30rpx 50rpx;
+}
+.message-item.system-message .avatar {
+  display: none;
+}
+.message-item.system-message .system-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  filter: brightness(1.2);
+}
+.message-item.system-message .bubble {
+  background: #FFF8F2;
+  color: #E65100;
+  text-align: center;
+  padding: 28rpx 40rpx;
+  border-radius: 16rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  box-shadow: 0 6rpx 24rpx rgba(230, 81, 0, 0.12);
+  border: 1px solid rgba(230, 81, 0, 0.1);
+  max-width: 90%;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+.message-item.appointment_created .bubble {
+  background: #E6F7FF;
+  color: #007AFF;
+  border: 1px solid #91D5FF;
+}
+.message-item.appointment_cancelled .bubble {
+  background: #FFF1F0;
+  color: #d71100;
+  border: 1px solid #FFA39E;
+}
+.time {
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 12rpx;
+  text-align: right;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  margin: 0 20rpx;
+  flex-shrink: 0;
+  background-color: #eee;
+}
+.msg-content {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 120rpx - 60rpx);
+}
+.bubble {
+  background: #fff;
+  padding: 20rpx 24rpx;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  line-height: 1.5;
+  word-break: break-all;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+.msg-image {
+  max-width: 450rpx;
+  max-height: 400rpx;
+  border-radius: 12rpx;
+  display: block;
+  background-color: #e9e9e9;
+}
+.location-msg {
+  width: 480rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background-color: #fefefe;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+.location-msg .map-thumb {
+  width: 100%;
+  height: 280rpx;
+  display: block;
+}
+.location-msg .map-info {
+  padding: 15rpx 20rpx;
+  background-color: #fff;
+}
+.location-msg .map-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8rpx;
+}
+.location-msg .map-address {
+  font-size: 24rpx;
+  color: #777;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.revoked-text {
+  font-size: 24rpx;
+  color: #999;
+}
+.input-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 15rpx 20rpx;
+  padding-bottom: calc(15rpx + env(safe-area-inset-bottom));
+  background: #f8f8f8;
+  border-top: 1rpx solid #e0e0e0;
+  transition: bottom 0.2s ease-out;
+  z-index: 100;
+  box-sizing: border-box;
+}
+.input-bar .icon-btn {
+  width: 56rpx;
+  height: 56rpx;
+  margin: 0 10rpx;
+  flex-shrink: 0;
+}
+.input-bar .input {
+  flex: 1;
+  height: 76rpx;
+  padding: 0 28rpx;
+  background: #fff;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}
+.input-bar .send-btn {
+  height: 72rpx;
+  padding: 0 36rpx;
+  line-height: 72rpx;
+  background: #000000;
+  color: white;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  flex-shrink: 0;
+}

@@ -1,0 +1,522 @@
+<template>
+  <view class="terms-container">
+<!-- 自定义导航栏 -->
+<view class="custom-navbar">
+  <view class="back-icon" @tap="goBack">←</view>
+  <view class="navbar-title">服务条款与隐私</view>
+</view>
+
+    <!-- 生效日期 -->
+    <!-- <view class="effective-date">生效日期：2025年6月3日</view> -->
+
+    <!-- 服务条款部分 -->
+    <view class="section">
+      <view class="section-title">一、服务条款</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 本平台旨在为用户提供“技工搜索与对接”服务，主要涵盖水电、家电、家具维修清洗等领域的技工信息发布与预约。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 本服务仅面向年满18周岁的成年人开放，任何具有完全民事行为能力的个人均可注册并使用本平台功能。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            3. 用户注册并登录后，可在平台上发布需求、浏览技工信息、发起私聊、拨打电话、查看评价、提交评价、添加收藏等操作；技工用户可在平台上发布服务信息、设置服务区域、更新个人资料、管理订单、查看用户评价等。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            4. 本服务目前仅支持微信小程序端和 Android、iOS 原生 App（基于 uni-app 打包）；暂不支持 H5 访问。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">二、账户注册与登录</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 用户注册/登录仅需提供有效手机号码，并通过阿里云短信服务（仅用于发送验证码）完成手机号验证，无需填写密码。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 注册成功后，系统会自动生成唯一账号（与手机号一致）及用户ID。用户可选择性地在“个人中心”补充昵称、头像、年龄、技能标签、地理位置等信息。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            3. 若用户更换手机或归属地，请及时登录更新手机号码或重新进行验证，以保证账号安全。用户应妥善保管自己的手机与验证码信息，对因个人原因造成的账户泄漏或损失，平台不承担责任。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">三、用户信息与行为规范</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 用户在平台发布的所有信息（包括但不限于姓名、手机号、技能介绍、服务区域、图片、评价等）均需真实、合法、有效，不得包含违法、色情、暴力、恶意欺诈等内容。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 用户不得将其账号转借、出租、出售或以其他任何方式向第三方提供使用。如发生上述情况，一切后果由账号持有人自行承担，并将被平台视作违规处理。
+          </text>
+        </view>
+        <view class="item">
+          <!-- 第一行标题 -->
+          <text class="item-text">
+            3. 平台对以下行为有权进行警告、限制功能使用、永久封禁账号等处罚：
+          </text>
+          <!-- 每一条单独成行 -->
+          <view class="item-text indent">• 发布虚假或侵权信息；</view>
+          <view class="item-text indent">• 恶意骚扰他人、故意诋毁他人；</view>
+          <view class="item-text indent">• 利用平台漏洞作弊或实施违法犯罪活动；</view>
+          <view class="item-text indent">• 其他违反国家法律法规或平台约定的行为。</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">四、内容版权与平台权利</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 用户通过本平台发布的所有原创文字、图片、音视频等作品，其著作权归用户所有；用户同时授予平台在全球范围内免费、永久、可转授权的使用许可，平台可在平台内外展示、传播、存储、转载、衍生（如为推广、截图、宣传等用途）。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 用户保证其上传内容不侵犯任何第三方的合法权益；若因用户上传内容导致任何第三方或政府机关对平台或平台关联主体提出索赔或行政处罚，用户应当独立承担所有法律责任，并保证平台免受损失。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            3. 平台对服务的界面、功能、Logo、商标、运营活动等拥有完整的知识产权，未经平台书面同意，任何个人或机构不得以任何方式擅自复制、模仿、使用、发布、发布含有平台标识的同类或相似产品。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">五、免责声明</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 本平台仅提供技工信息展示、在线沟通与交互，技工的服务质量、水平、合法资质等因素均由用户自行判断并承担风险。平台无法也不对任何用户（无论是技工还是需求方）提供的服务结果承担连带责任。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 平台对网络环境、服务器、软件、硬件、第三方短信、第三方地图等服务供应商的稳定性与安全性不做保证。如因设备损坏、网络故障、中断、黑客攻击、不可抗力等非平台原因导致服务中断或数据丢失，平台不承担赔偿责任。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            3. 对于用户在平台上发生的纠纷，平台会在能力范围内提供协调、投诉通道和证据保存帮助，但对纠纷最终结果不承担法律责任。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">六、用户投诉与申诉</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 如用户发现其他用户/技工存在虚假信息、侵犯自己合法权益等行为，可通过“个人中心→投诉与反馈”提交相关证据及说明。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 平台收到投诉后，将在七个工作日内审核并视情况对涉嫌违规内容进行下架或账号处理，并及时向投诉方反馈处理结果。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            3. 如用户对平台处罚有异议，可在收到通知后15日内提交申诉材料，平台将再次审核并给出最终答复。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">七、条款变更与终止</view>
+      <view class="section-content">
+        <view class="item">
+          <text class="item-text">
+            1. 本条款在必要时可进行修改，修改内容会在平台公告并以弹窗或消息推送形式提醒所有用户，无需单独通知。若用户在条款更新后继续使用本服务，即视为接受修改后的条款；如不同意修改，可停止使用并注销账号。
+          </text>
+        </view>
+        <view class="item">
+          <text class="item-text">
+            2. 平台保留因业务调整、中断或终止服务的权利，并会提前十个工作日通知用户。因平台原因导致的损失，平台将与用户协商妥善处置，但不承担额外赔偿责任。
+          </text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 隐私政策部分 -->
+    <view class="section">
+      <view class="section-title">隐私政策</view>
+
+      <view class="subsection">
+        <view class="sub-title">一、总则</view>
+        <view class="sub-content">
+          <text>
+            为向您提供更加安全、可靠的“技工搜索与对接”服务，保护您的个人信息安全，特制定本《隐私政策》。您使用本平台即表示同意本政策所述内容（包括政策不时更新后的版本）。
+          </text>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">二、信息的收集</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 必填信息：
+            </text>
+            <text class="item-text indent">
+              • 手机号码：用于注册/登录时发送验证码验证。该信息为用户唯一标识，不对外公开。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 可选信息：
+            </text>
+            <text class="item-text indent">
+              • 昵称、头像、年龄、性别、技能标签：供用户个性化展示；用户不填写时，平台会赋予默认值（如“用户_后四位”、“系统默认头像”）。
+            </text>
+            <text class="item-text indent">
+              • 地理位置信息：用于计算与技工距离、搜索附近服务、推送本地热门技工，用户可在“个人中心”随时开启/关闭位置授权。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              3. 自动收集信息：
+            </text>
+            <text class="item-text indent">
+              • 本平台不会主动采集设备型号、系统版本、IP等信息，但可能在日志里记录访问时间、请求接口、错误日志等，用于技术维护和故障排查。
+            </text>
+            <text class="item-text indent">
+              • 不会使用 Cookie 或第三方 SDK 来跟踪用户行为，也不会对用户进行跨站点跟踪。
+            </text>
+          </view>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">三、信息的使用与存储</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 使用方式：
+            </text>
+            <text class="item-text indent">
+              • 手机验证：发送登录/注册验证码，确保账户安全。
+            </text>
+            <text class="item-text indent">
+              • 功能提供：展示技工列表、计算距离、推送附近服务。
+            </text>
+            <text class="item-text indent">
+              • 沟通与评价：如用户发起私聊、拨打电话、查看评论等功能，需要在平台内关联真实手机号或加密后数据，以保证沟通顺畅，但平台不会泄露完整号码给第三方。
+            </text>
+            <text class="item-text indent">
+              • 个性化体验：根据用户填写的年龄、技能、地理位置信息，为用户推荐匹配度更高的技工信息。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 存储时长：
+            </text>
+            <text class="item-text indent">
+              • 用户的账号基本信息（手机号、昵称、头像、地理位置、技能标签等）会一直保存在阿里云数据库中，直至用户主动注销账号。
+            </text>
+            <text class="item-text indent">
+              • 登录记录、浏览记录、聊天记录会保存6个月，用于平台优化、客服介入或纠纷核查；若无特殊需求，6个月后自动清除。
+            </text>
+            <text class="item-text indent">
+              • 短信验证码在数据库中保存时长为5分钟，用于校验验证码有效性；校验完成后立即删除。
+            </text>
+          </view>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">四、信息的共享与披露</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 本平台不向任何第三方出售、出租、共享用户个人信息。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 平台仅在以下情形下，部分或全部披露用户信息：
+            </text>
+            <text class="item-text indent">
+              • 法律法规要求或应司法、行政机关的要求；
+            </text>
+            <text class="item-text indent">
+              • 平台安全维护：如出现账号被恶意盗用、黑灰产攻击等情况，需要披露给安全审计部门或技术合作方，仅限于查明安全事件原因；
+            </text>
+            <text class="item-text indent">
+              • 用户明确授权：如用户在其他系统内主动授权本平台获取相应数据（目前暂无此需求）。
+            </text>
+          </view>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">五、信息安全保护措施</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 传输安全：
+            </text>
+            <text class="item-text indent">
+              • 平台一切网络请求均采用 HTTPS 加密传输，防止第三方网络监听或篡改。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 存储安全：
+            </text>
+            <text class="item-text indent">
+              • 用户信息和聊天记录等保存在阿里云 UniCloud（阿里云数据库与存储服务），阿里云具有完善的物理与网络安全机制，包括但不限于：主机防火墙、DDoS 防护、数据加密、访问控制、定期漏洞扫描。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              3. 访问权限控制：
+            </text>
+            <text class="item-text indent">
+              • 仅限平台授权的运维人员或系统管理员可以访问生产环境数据库，所有访问都有审计日志；普通开发人员仅能访问测试环境。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              4. 加密与脱敏：
+            </text>
+            <text class="item-text indent">
+              • 在业务场景中，会对用户手机号码进行部分脱敏处理（如展示仅保留前三位和后四位）。
+            </text>
+            <text class="item-text indent">
+              • 聊天记录存储时，对手机号等敏感字段进行 AES 加密（仅内部解密权限，用于纠纷核查），避免明文存储。
+            </text>
+          </view>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">六、用户权利</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 访问与更正：
+            </text>
+            <text class="item-text indent">
+              • 用户可在“个人中心”随时查看和修改自己的昵称、头像、性别、年龄、技能标签、地理位置等可选信息。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 删除与注销：
+            </text>
+            <text class="item-text indent">
+              • 用户如果希望注销账号，可在“个人中心→设置→注销账号”中操作；账号注销后，用户的手机号、昵称、头像、浏览记录及订单数据将立即从平台数据库中删除，但聊天记录与评价记录会在6个月后自动删除。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              3. 关闭授权：
+            </text>
+            <text class="item-text indent">
+              • 用户可随时在微信小程序或 App 设置中撤销“位置授权”，此后平台将无法获取地理位置信息。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              4. 投诉与反馈：
+            </text>
+            <text class="item-text indent">
+              • 如对个人信息使用方式有异议，可通过邮箱 <text class="email">3327261595@qq.com</text> 联系我们，平台将在7个工作日内回复并妥善处理。
+            </text>
+          </view>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">七、儿童信息保护</view>
+        <view class="sub-content">
+          <text>
+            本平台仅面向成年人开放，18岁以下人士（含未成年人）请勿注册。如平台发现注册信息明显属于未成年人，将立即封禁该账号并删除相关信息。如您为监护人且发现孩子误操作注册，可及时向我们发送证明材料（身份证明、监护人身份证明）申请账号删除。
+          </text>
+        </view>
+      </view>
+
+      <view class="subsection">
+        <view class="sub-title">八、政策更新</view>
+        <view class="sub-content">
+          <view class="item">
+            <text class="item-text">
+              1. 平台有权随时修订本《隐私政策》，修订后会在小程序内“服务条款与隐私政策”页面以弹窗或公告形式提示所有用户，并在文首注明“生效日期”。
+            </text>
+          </view>
+          <view class="item">
+            <text class="item-text">
+              2. 若用户在本政策修订后，继续使用本平台服务，则视为已接受更新内容；如不同意更新，可随时停止使用并申请注销账号。
+            </text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 联系方式 -->
+    <view class="contact-us">
+      <text>如对本“服务条款”或“隐私政策”有任何疑问，请联系：</text>
+      <text class="email">3327261595@qq.com</text>
+    </view>
+  </view>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+// 定义固定的导航栏高度
+const navbarHeight = '88rpx'; // 导航栏总高度（包括顶部内边距和内容高度）
+
+function goBack() {
+  uni.navigateBack();
+}
+</script>
+
+
+<style lang="scss">
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  padding-top: 50rpx;
+  background: linear-gradient(180deg, #ffffff, #f8f8f8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 均匀分布元素 */
+  padding-left: 20rpx; /* 统一左右内边距 */
+  padding-right: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.back-icon {
+  font-size: 40rpx;
+  color: #333333;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.back-icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* 水平居中 */
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+  white-space: nowrap; /* 防止文字换行 */
+}
+
+.terms-container {
+  padding-top: calc(88rpx + 75rpx);
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  padding-bottom: 40rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 每个大章节 */
+.section {
+  margin-bottom: 50rpx; /* 增加间距 */
+}
+
+/* 大章节标题 */
+.section-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #4285F4;
+  margin-bottom: 20rpx;
+}
+
+/* 小章节 (隐私政策内) */
+.subsection {
+  margin-top: 30rpx; /* 增加间距 */
+}
+.sub-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #4285F4;
+  margin-bottom: 15rpx;
+}
+.sub-content {
+  padding-left: 12rpx;
+  padding: 30rpx; /* 增加内边距 */
+}
+
+/* 段落内容 */
+.section-content {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx; /* 增加内边距 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.03);
+}
+
+/* 每条条款文本 */
+.item {
+  margin-bottom: 20rpx;
+}
+.item-text {
+  font-size: 28rpx; /* 增大字体 */
+  line-height: 1.8; /* 增加行高 */
+  color: #333333;
+}
+.indent {
+  padding-left: 24rpx;
+  display: block;
+}
+
+/* 联系方式 */
+.contact-us {
+  margin-top: 50rpx;
+  padding: 24rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.03);
+}
+.email {
+  font-size: 28rpx;
+  color: #4285F4;
+  margin-top: 12rpx;
+  display: block;
+}
+</style>

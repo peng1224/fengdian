@@ -1,0 +1,7 @@
+{
+  "name": "payNotify",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

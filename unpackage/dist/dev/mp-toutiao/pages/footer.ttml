@@ -1,0 +1,1 @@
+<view class="kefu"><button class="btn" disabled></button><image src="{{a}}" mode="aspectFill" class="pic"/><view class="line"></view></view>

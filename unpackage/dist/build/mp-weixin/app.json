@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/previewList/previewList",
+    "pages/chatList/chatList",
+    "pages/profile/profile",
+    "pages/Homepage/Homepage",
+    "pages/EditProfile/EditProfile",
+    "pages/login/login",
+    "pages/terms/terms",
+    "pages/HomepageDetail/HomepageDetail",
+    "pages/chatDetail/chatDetail",
+    "pages/applyTechnician/applyTechnician",
+    "pages/admin/ReviewApplications/ReviewApplications",
+    "pages/appointmentForm/appointmentForm",
+    "pages/worker-schedule/worker-schedule",
+    "pages/user-schedule/user-schedule",
+    "pages/newsDetail/newsDetail",
+    "pages/allComments/allComments"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#007AFF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/homefill2.png"
+      },
+      {
+        "text": "工人",
+        "pagePath": "pages/previewList/previewList",
+        "iconPath": "static/images/worker.png",
+        "selectedIconPath": "static/images/workerfill.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/chatList/chatList",
+        "iconPath": "static/images/message.png",
+        "selectedIconPath": "static/images/messagefill.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/images/profile.png",
+        "selectedIconPath": "static/images/profile2.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于用户获取位置服务"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

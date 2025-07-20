@@ -1,0 +1,7 @@
+{
+  "name": "getOpenidByCode",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

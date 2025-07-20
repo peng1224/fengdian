@@ -1,0 +1,7 @@
+{
+  "name": "get-chat-session",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

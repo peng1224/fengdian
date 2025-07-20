@@ -1,0 +1,7 @@
+{
+  "name": "recordHomepageView",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,313 @@
+
+/* 全局页面容器 */
+.page-container[data-v-3ba41579] {
+  background-color: #f2f2f7;
+  min-height: 100vh;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* 加载 & 空白 提示 */
+.feedback-view[data-v-3ba41579] {
+  display: flex;
+  flex-direction: column; /* 调整为列方向 */
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  color: #8e8e93;
+  font-size: 1rem;
+}
+
+/* 列表容器 */
+.appointment-list[data-v-3ba41579] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.625rem;
+}
+
+/* 卡片容器 */
+.appointment-card[data-v-3ba41579] {
+  background: #ffffff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.appointment-card[data-v-3ba41579]:active {
+  transform: scale(0.99);
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片内容 */
+.card-body[data-v-3ba41579] {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+/* 信息行 */
+.info-row[data-v-3ba41579] {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.info-row .label[data-v-3ba41579] {
+  color: #8e8e93;
+  width: 5rem;
+  flex-shrink: 0;
+}
+.info-row .value[data-v-3ba41579] {
+  color: #1c1c1e;
+  text-align: right;
+  flex: 1;
+  word-break: break-all;
+}
+
+/* 状态文字 */
+.status-text[data-v-3ba41579] {
+  font-weight: 500;
+}
+.status-text.status-confirmed[data-v-3ba41579] {
+  color: #007aff;
+}
+.status-text.status-completed[data-v-3ba41579] {
+  color: #34c759;
+}
+.status-text.status-cancelled_by_worker[data-v-3ba41579],
+.status-text.status-cancelled_by_user[data-v-3ba41579] {
+  color: #ff3b30;
+}
+
+/* 卡片底部按钮区域 */
+.card-footer[data-v-3ba41579] {
+  border-top: 0.03125rem solid #e5e5e5;
+  padding: 0.625rem 1rem;
+}
+
+/* 按钮组 */
+.button-group[data-v-3ba41579] {
+  display: flex;
+  gap: 0.625rem; /* 按钮间距 */
+  /* 动态类将控制 justify-content */
+}
+.button-group.justify-two-buttons[data-v-3ba41579] {
+  justify-content: space-between; /* 两个按钮时左右对齐 */
+}
+.button-group.justify-one-button[data-v-3ba41579] {
+  justify-content: flex-end; /* 一个按钮时右对齐 */
+}
+.button-group .btn[data-v-3ba41579] {
+  flex: 1; /* 允许按钮平均分配空间并填充 */
+  max-width: 8.75rem; /* 限制按钮的最大宽度，防止过宽 */
+  padding: 0.9375rem 0; /* 垂直内边距增至 30rpx */
+  font-size: 0.8125rem;
+  border-radius: 1.25rem;
+  line-height: 1;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.2s, opacity 0.2s;
+}
+.button-group .btn[data-v-3ba41579]:active {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+.button-group .cancel[data-v-3ba41579] {
+  background-color: #fff;
+  color: #ff3b30;
+  border: 0.03125rem solid #ff3b30;
+}
+.button-group .finish[data-v-3ba41579] {
+  background-color: #34c759;
+  color: #fff;
+  border: 0.03125rem solid #34c759;
+}
+.button-group .review[data-v-3ba41579] {
+  background-color: #007aff;
+  color: #fff;
+  border: 0.03125rem solid #007aff;
+}
+.button-group .contact[data-v-3ba41579] { /* 联系客服按钮样式 */
+  background-color: #fff; /* 调整为白色背景 */
+  color: #007aff; /* 蓝色文字 */
+  border: 0.03125rem solid #007aff; /* 蓝色边框 */
+}
+.button-group .detail[data-v-3ba41579] { /* 查看退款详情按钮样式 */
+  background-color: #e0e0e0;
+  color: #333;
+  border: 0.03125rem solid #e0e0e0;
+}
+
+
+/* 评价模态框背景 */
+.modal-overlay[data-v-3ba41579] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 评价模态框主体 */
+.modal-content[data-v-3ba41579] {
+  width: 90%;
+  max-width: 21.25rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 模态框顶部 */
+.modal-header[data-v-3ba41579] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 0.03125rem solid #e5e5e5;
+}
+.modal-header .modal-title[data-v-3ba41579] {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1c1c1e;
+}
+.modal-header .modal-close[data-v-3ba41579] {
+  font-size: 1.25rem;
+  color: #8e8e93;
+}
+
+/* 模态框内容 */
+.modal-body[data-v-3ba41579] {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 刻度星星区域 */
+.stars[data-v-3ba41579] {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.stars .star[data-v-3ba41579] {
+  font-size: 1.875rem;
+  color: #e0e0e0;
+  transition: color 0.2s, transform 0.2s;
+}
+.stars .star.active[data-v-3ba41579] {
+  color: #ffc107;
+}
+.stars .star[data-v-3ba41579]:active {
+  transform: scale(1.2);
+}
+
+/* 评论文本框 */
+.comment-textarea[data-v-3ba41579] {
+  width: 100%;
+  height: 5.625rem;
+  padding: 0.625rem;
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #1c1c1e;
+  box-sizing: border-box;
+}
+
+/* 图片上传区域 */
+.image-uploader[data-v-3ba41579] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+.image-uploader .upload-btn[data-v-3ba41579],
+.image-uploader .image-preview[data-v-3ba41579] {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+.upload-btn[data-v-3ba41579] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f7;
+  border: 0.03125rem dashed #ccc;
+  font-size: 1.875rem;
+  color: #ccc;
+}
+.image-preview[data-v-3ba41579] {
+  position: relative;
+  overflow: hidden;
+}
+.image-preview uni-image[data-v-3ba41579] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.remove-image[data-v-3ba41579] {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-tip[data-v-3ba41579] {
+  margin-top: 0.3125rem;
+  font-size: 0.75rem;
+  color: #8e8e93;
+  text-align: right;
+}
+
+/* 匿名选项 */
+.anonymous-section[data-v-3ba41579] {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.checkbox-group uni-label[data-v-3ba41579] {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #1c1c1e;
+}
+.checkbox-group uni-checkbox[data-v-3ba41579] {
+  margin-right: 0.3125rem;
+}
+
+/* 提交按钮 */
+.submit-review-btn[data-v-3ba41579] {
+  background: #007aff;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0 1rem 1rem;
+}
+/* ===== 按钮大小调整（附加至文件末尾） ===== */
+/* 统一设置所有按钮的 flex 行为和最大宽度 */
+.button-group .btn[data-v-3ba41579] {
+  flex: 1; /* 允许按钮平均分配空间并填充 */
+  max-width: 8.75rem; /* 限制按钮的最大宽度，防止过宽 */
+  padding: 0.9375rem 0; /* 垂直内边距增至 30rpx */
+  font-weight: 500; /* 统一字体粗细 */
+  /* 其他样式保持不变 */
+}

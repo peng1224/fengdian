@@ -1,0 +1,219 @@
+
+.page-container.data-v-91af7e50 {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+.form-container.data-v-91af7e50 {
+  padding: 40rpx;
+  background-color: #ffffff;
+}
+.form-title.data-v-91af7e50 {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.form-subtitle.data-v-91af7e50 {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 40rpx;
+}
+.form-item.data-v-91af7e50 {
+  margin-bottom: 40rpx;
+}
+.label.data-v-91af7e50 {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+  display: block;
+}
+.label .required-star.data-v-91af7e50 {
+  color: #ff0000;
+  margin-left: 5rpx;
+}
+.date-selector .scroll-view.data-v-91af7e50 {
+  white-space: nowrap;
+  width: 100%;
+}
+.day-item.data-v-91af7e50 {
+  display: inline-block;
+  text-align: center;
+  padding: 20rpx;
+  margin-right: 20rpx;
+  border: 1px solid #eee;
+  border-radius: 16rpx;
+  transition: all 0.3s;
+  background-color: #f7f7f7;
+}
+.day-item.active-day.data-v-91af7e50 {
+  background-color: #30d158;
+  color: #fff;
+  border-color: #30d158;
+}
+.day-name.data-v-91af7e50 {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.day-date.data-v-91af7e50 {
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+.day-item.active-day .day-name.data-v-91af7e50,
+.day-item.active-day .day-date.data-v-91af7e50 {
+  color: #fff;
+}
+.time-slot-container.data-v-91af7e50 {
+  margin-top: 30rpx;
+}
+.loading-text.data-v-91af7e50, .no-slots-text.data-v-91af7e50 {
+  text-align: center;
+  color: #999;
+  padding: 40rpx 0;
+}
+.time-slot-grid.data-v-91af7e50 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx;
+}
+.time-slot-item.data-v-91af7e50 {
+  padding: 20rpx 10rpx;
+  border: 1px solid #ddd;
+  border-radius: 12rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.time-slot-item.data-v-91af7e50:active {
+  transform: scale(0.95);
+}
+.time-slot-item.selected-slot.data-v-91af7e50 {
+  background-color: #30d158;
+  color: #fff;
+  border-color: #30d158;
+}
+.time-slot-item.booked-slot.data-v-91af7e50 {
+  background-color: #f2f2f2;
+  color: #aaa;
+  border-color: #e5e5e5;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.time-slot-item.past-slot.data-v-91af7e50 {
+  background-color: #f9f9f9;
+  color: #ccc;
+  border-color: #f0f0f0;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+.remark-textarea.data-v-91af7e50 {
+  width: 100%;
+  height: 150rpx;
+  border: 1px solid #e5e5e5;
+  padding: 20rpx;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+}
+/* 【修改】提交按钮样式，边距调整 */
+.submit-btn.data-v-91af7e50 {
+  width: 100%;
+  height: 96rpx;
+  background: linear-gradient(to right, #30d158, #28a745);
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 48rpx;
+  line-height: 96rpx;
+  text-align: center;
+  /* margin-top: 40rpx; */ /* 由下方的 notice 盒子控制 */
+  box-shadow: 0 4px 10px rgba(48, 209, 88, 0.3);
+  transition: all 0.3s;
+}
+.submit-btn.data-v-91af7e50:active {
+  opacity: 0.8;
+}
+.submit-btn[disabled].data-v-91af7e50 {
+  background: #c8c9cc;
+  color: #fff;
+  box-shadow: none;
+}
+.location-selector.data-v-91af7e50 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100rpx;
+  border: 1px solid #e5e5e5;
+  padding: 15rpx 20rpx;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  transition: background-color 0.2s;
+}
+.location-selector.data-v-91af7e50:active {
+  background-color: #f0f0f0;
+}
+.location-text-wrapper.data-v-91af7e50 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.location-placeholder.data-v-91af7e50 {
+  font-size: 28rpx;
+  color: #999;
+}
+.location-name.data-v-91af7e50 {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5rpx;
+}
+.location-address.data-v-91af7e50 {
+  font-size: 24rpx;
+  color: #666;
+}
+.detail-address-input.data-v-91af7e50 {
+  width: 100%;
+  height: 88rpx;
+  border: 1px solid #e5e5e5;
+  padding: 0 20rpx;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  margin-top: 20rpx;
+}
+/* 【新增】支付提示卡片的样式 */
+.payment-notice.data-v-91af7e50 {
+    background-color: #fffaf0;
+    border: 1px solid #ffe5b3;
+    border-radius: 16rpx;
+    padding: 20rpx;
+    margin-bottom: 40rpx;
+    font-size: 24rpx;
+    color: #666;
+    line-height: 1.6;
+}
+.notice-title.data-v-91af7e50 {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10rpx;
+}
+.notice-title text.data-v-91af7e50 {
+    margin-left: 10rpx;
+    color: #d98600;
+}
+.notice-content.data-v-91af7e50 {
+    padding-left: 5rpx;
+}
+.notice-list-item.data-v-91af7e50 {
+    margin-top: 8rpx;
+    padding-left: 5rpx;
+    font-size: 22rpx;
+    color: #888;
+}

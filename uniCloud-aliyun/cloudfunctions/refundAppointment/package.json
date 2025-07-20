@@ -1,0 +1,7 @@
+{
+  "name": "refundAppointment",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

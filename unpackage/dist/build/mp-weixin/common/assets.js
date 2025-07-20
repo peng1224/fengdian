@@ -1,0 +1,1 @@
+"use strict";exports._imports_0="/static/images/my location.png",exports._imports_0$1="/static/images/empty-chat.png",exports._imports_0$2="/static/images/appointment-time.png",exports._imports_0$3="/static/images/empty-box.png",exports._imports_1="/static/images/sendImg.png",exports._imports_2="/static/images/location.png";

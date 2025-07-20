@@ -1,0 +1,7 @@
+{
+  "name": "get-history-messages",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

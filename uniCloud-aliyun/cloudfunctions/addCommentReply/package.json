@@ -1,0 +1,7 @@
+{
+  "name": "addCommentReply",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

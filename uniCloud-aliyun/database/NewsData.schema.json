@@ -1,0 +1,41 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"author":{
+			"title": "作者",
+			"description": "请填写作者",
+			"bsonType": "string"
+		},
+		"content":{
+			"title": "内容",
+			"description": "请填写内容",
+			"bsonType": "string"
+		},
+		"picurl":{
+			"title": "封面",
+			"description": "请填写封面",
+			"bsonType": "string"
+		},
+		"publish_date":{
+			"title": "时间",
+			"description": "请填写时间",
+			"bsonType": "timestamp"
+		},
+		"serial_number":{
+			"title": "排序",
+			"description": "请填写排序",
+			"bsonType": "int"
+		}
+	}
+}

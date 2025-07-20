@@ -1,0 +1,273 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+.data-v-dd383ca2:root, page.data-v-dd383ca2, body.data-v-dd383ca2, html.data-v-dd383ca2, #app.data-v-dd383ca2, .uni-app.data-v-dd383ca2 {
+  --themeColor: #1ABDF2;
+  --primary-accent: #1ABDF2;
+  --globalcolor: #1a1b1c;
+  --focusColor: #4c4d4e;
+  --descColor: #7e8081;
+  --greyColor: #8e8e8e;
+  --subColor: #b1b2b3;
+  --lightColor: #e4e4e4;
+  --globalBgColor1: #e3e4e5;
+  --globalBgColor2: #f6f7f8;
+  --globalBgColor3: #ffffff;
+  --bg-light: #f7f8fa;
+  --blue-accent: #3978F7;
+  --text-main: #333333;
+  --text-sub: #666666;
+  --line-gray: #E5E5E5;
+  --bg-white: #FFFFFF;
+}
+
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.profile-page.data-v-dd383ca2 {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 50px);
+  width: 100%;
+  padding-bottom: 50px;
+}
+.welcome-container.data-v-dd383ca2 {
+  transform: translateY(50rpx);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 50px);
+  padding: 15vh 50rpx 10vh;
+  box-sizing: border-box;
+}
+.welcome-content.data-v-dd383ca2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.logo-placeholder.data-v-dd383ca2 {
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 50%;
+  background-color: #e9e9eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+}
+.logo-placeholder uni-icons.data-v-dd383ca2 {
+  opacity: 0.8;
+}
+.welcome-title.data-v-dd383ca2 {
+  font-size: 48rpx;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin-bottom: 16rpx;
+}
+.welcome-subtitle.data-v-dd383ca2 {
+  font-size: 30rpx;
+  color: #8a8a8e;
+  max-width: 80%;
+}
+.login-button.data-v-dd383ca2 {
+  width: 80%;
+  height: 96rpx;
+  line-height: 96rpx;
+  border-radius: 48rpx;
+  background-color: #007aff;
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 180rpx;
+}
+.login-button.data-v-dd383ca2:after {
+  border: none;
+}
+.header-emptybox.data-v-dd383ca2 {
+  width: 100%;
+  height: 230rpx;
+  background-color: #f2f2f7;
+  position: relative;
+}
+.profile-title.data-v-dd383ca2 {
+  position: absolute;
+  font-size: 55rpx;
+  font-weight: 580;
+  color: #1c1c1e;
+  font-family: "Helvetica Neue", "PingFang SC", "Helvetica", "Arial", sans-serif;
+  top: 130rpx;
+  left: 35rpx;
+}
+.profile-header.data-v-dd383ca2 {
+  display: flex;
+  align-items: center;
+  padding: 40rpx;
+  background-color: #ffffff;
+  margin-bottom: 20rpx;
+  border-radius: 50rpx;
+}
+.profile-header.logged-in.data-v-dd383ca2 {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.profile-header.logged-in.data-v-dd383ca2:active {
+  background-color: #f0f0f0;
+}
+.avatar-wrapper.data-v-dd383ca2 {
+  position: relative;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  overflow: visible;
+  margin-right: 30rpx;
+  flex-shrink: 0;
+}
+.avatar-wrapper .avatar.data-v-dd383ca2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+.verification-badge.data-v-dd383ca2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 44rpx;
+  height: 44rpx;
+  background: #34c759;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4rpx solid #ffffff;
+  box-sizing: border-box;
+}
+.user-info.data-v-dd383ca2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.user-name.data-v-dd383ca2 {
+  font-size: 44rpx;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin-bottom: 8rpx;
+}
+.edit-hint.data-v-dd383ca2 {
+  font-size: 28rpx;
+  color: #8a8a8e;
+}
+.action-list.data-v-dd383ca2 {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin: 0 24rpx 30rpx;
+  overflow: hidden;
+}
+.action-item.data-v-dd383ca2 {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 30rpx;
+  min-height: 120rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.action-item.data-v-dd383ca2:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 120rpx;
+  height: 1px;
+  background-color: #e5e5ea;
+  transform: scaleY(0.5);
+}
+.action-item.data-v-dd383ca2:active {
+  background-color: #f0f0f0;
+}
+.action-item.disabled.data-v-dd383ca2 {
+  color: #8a8a8e;
+  cursor: default;
+}
+.action-item.disabled.data-v-dd383ca2:active {
+  background-color: #ffffff;
+}
+.action-item.danger.data-v-dd383ca2 {
+  justify-content: center;
+}
+.action-item.danger .action-text.data-v-dd383ca2 {
+  color: #ff3b30;
+  flex: none;
+  margin: 0;
+}
+.action-text-wrapper.data-v-dd383ca2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  gap: 4rpx;
+}
+.action-text.data-v-dd383ca2 {
+  font-size: 32rpx;
+  color: #1c1c1e;
+  font-weight: 500;
+}
+.action-subtitle.data-v-dd383ca2 {
+  font-size: 26rpx;
+  color: #8a8a8e;
+}
+.arrow-icon.data-v-dd383ca2 {
+  margin-left: auto;
+}
+.spinner-container.data-v-dd383ca2 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-item-header.data-v-dd383ca2 {
+  padding: 20rpx 30rpx;
+  display: flex;
+  border-bottom: 1px solid #e5e5ea;
+}
+.status-badge.data-v-dd383ca2 {
+  padding: 8rpx 20rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  display: inline-flex;
+  align-items: center;
+  gap: 10rpx;
+  font-weight: 500;
+}
+.status-badge.rejected.data-v-dd383ca2 {
+  background-color: #fff0f0;
+  color: #ff3b30;
+}
+.status-badge.rejected uni-icons.data-v-dd383ca2 {
+  color: #ff3b30 !important;
+}

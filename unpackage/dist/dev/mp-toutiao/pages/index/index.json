@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "default",
+  "usingComponents": {
+    "news-item": "../news-item"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "reverseGeocode",
+  "dependencies": {
+    "axios": "^1.10.0"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
