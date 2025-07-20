@@ -12,7 +12,7 @@
 
 ## 官网预览
 
-[点击访问官网](https://peng1224.github.io/fengdiandaojia) （请确保你部署了 GitHub Pages）
+[点击访问官网](https://peng1224.github.io/fengdiandaojia) 
 
 ## 联系方式
 
